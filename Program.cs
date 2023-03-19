@@ -3,7 +3,7 @@
 try
 {
     //1. Crear una función que calcule el área de un círculo, recibiendo como parámetro el radio.
-    static void calcular_area_circulo()
+    static int calcular_area_circulo()
     {
         int radio = 0;
         double area = 0;
@@ -12,10 +12,11 @@ try
         radio = Convert.ToInt32(Console.ReadLine());
         area = pi * Math.Pow(radio, 2);
         Console.WriteLine("El resultado es: " + area + "\n");
+        return 0;
     }
 
     //2. Crear una función que calcule el perímetro de un rectángulo, recibiendo como parámetros el ancho y la altura.
-    static void calcular_perimetro_rectangulo()
+    static int calcular_perimetro_rectangulo()
     {
         double ancho = 0, altura = 0, perimetro;
         Console.Write("Ingresa el ancho y la altura de un rectángulo y te diré su perímetro: \n");
@@ -23,10 +24,11 @@ try
         altura = Convert.ToInt32(Console.ReadLine());
         perimetro = ancho * 2 + altura * 2;
         Console.WriteLine("El resultado es: " + perimetro + "\n");
+        return 0;
     }
 
     //3. Crear una función que calcule el promedio de una lista de números, recibiendo como parámetro una lista de enteros.
-    static void calcular_promedio()
+    static int calcular_promedio()
     {
         int n;
         int nlista;
@@ -48,10 +50,11 @@ try
             promedio /= nlista;
             Console.WriteLine("El resultado es: " + promedio + "\n");
         }
+        return 0;
     }
 
     //4. Crear una función que determine si un número es par o impar, recibiendo como parámetro el número.
-    static void par_o_impar()
+    static int par_o_impar()
     {
         int num;
         Console.WriteLine("Ingresa un número y te diré si es par o impar: ");
@@ -64,20 +67,22 @@ try
         {
             Console.WriteLine("Es impar.\n");
         }
+        return 0;
     }
 
     //5. Crear una función que convierta una cadena a mayúsculas, recibiendo como parámetro la cadena.
-    static void cadena_a_mayus()
+    static int cadena_a_mayus()
     {
         string cadena, mayus;
         Console.Write("Ingresa el texto que quieras y te lo diré en mayúsculas: ");
         cadena = Console.ReadLine();
         mayus = cadena.ToUpper();
         Console.WriteLine(mayus);
+        return 0;
     }
 
     //6. Crear una función que calcule la distancia entre dos puntos en un plano cartesiano, recibiendo como parámetros las coordenadas x e y de ambos puntos.
-    static void calcular_distancia_puntos()
+    static int calcular_distancia_puntos()
     {
         int x1, y1, x2, y2;
         double distancia;
@@ -88,10 +93,11 @@ try
         y2 = Convert.ToInt32(Console.ReadLine());
         distancia = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
         Console.WriteLine("El resultado es: " + distancia + "\n");
+        return 0;
     }
 
     //7. Crear una función que calcule la suma de los primeros n números naturales, recibiendo como parámetro el número n.
-    static void suma_n_numeros()
+    static int suma_n_numeros()
     {
         Console.WriteLine("Ingresa un número n y te diré la suma de los primeros n números naturales: \n");
         int N, suma = 0;
@@ -128,10 +134,11 @@ try
                 Console.WriteLine("¡A la próxima prueba con un número mayor!\n");
             }
         }
+        return 0;
     }
 
     //8. Crear una función que calcule el factorial de un número, recibiendo como parámetro el número.
-    static void factorial()
+    static int factorial()
     {
         int N, fact = 1;
         Console.WriteLine("Ingresa un número y te diré su factorial: \n");
@@ -164,6 +171,7 @@ try
             Console.Write(" = " + fact);
             Console.WriteLine($"\nEl resultado es " + fact + "\n");
         }
+        return 0;
     }
 
     calcular_area_circulo();
